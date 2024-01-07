@@ -1,0 +1,74 @@
+/* side_bar.php에 대한 css파일 */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, -sans-serif;
+}
+.sidebar {
+  height: 100%;
+  width: 280px; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #399EE5;
+  overflow-x: hidden;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar p { 
+  /* 글자 크기, 색 바꿈*/
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: bold; /* 글자를 굵게 만듭니다. */
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+.sidebar p:last-of-type {
+  margin-top: -15px; /* 이 값을 조정하여 원하는 간격을 얻을 수 있습니다. */
+}
+.sidebar .dropdown-container {
+  display: none;
+  padding-left: 32px;
+}
+.sidebar .center-btn {
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  text-indent: 25px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 30px;
+}
+.sidebar .center-btn:hover {
+  color: #80D4FF;
+}
+.sidebar .dropdown-container a {
+  padding: 6px 8px 6px 45px;
+}
+.sidebar .dropdown-container a:hover {
+  color: #80D4FF;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.content {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  display: none;
+}

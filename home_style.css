@@ -1,0 +1,19 @@
+/* home.php에 대한 css 파일*/
+ 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+}
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+}
